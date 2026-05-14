@@ -1,0 +1,6 @@
+*.zip
+cmdtools/
+gradle-8.7/
+build/
+.gradle/
+local.properties

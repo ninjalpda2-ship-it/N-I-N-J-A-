@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/codespace/.gradle/daemon/8.7/com.ninja.assistant.app-merged_res-20:/layout_activity_main.xml.flat",
+        "source": "/home/codespace/.gradle/daemon/8.7/com.ninja.assistant.app-main-22:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.ninja.assistant.app-merged_res-20:/xml_network_security_config.xml.flat",
+        "source": "com.ninja.assistant.app-main-22:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "/home/codespace/.gradle/daemon/8.7/com.ninja.assistant.app-merged_res-20:/xml_accessibility_service_config.xml.flat",
+        "source": "/home/codespace/.gradle/daemon/8.7/com.ninja.assistant.app-main-22:/xml/accessibility_service_config.xml"
+    }
+]
