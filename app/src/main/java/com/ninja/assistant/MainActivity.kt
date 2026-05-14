@@ -14,7 +14,7 @@ class MainActivity : Activity() {
     private lateinit var tvChat: TextView
     private lateinit var etInput: EditText
     private lateinit var btnSend: Button
-    private val GROQ_API_KEY = "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"
+    private var GROQ_API_KEY = ""
     private val conversacion = mutableListOf<JSONObject>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
