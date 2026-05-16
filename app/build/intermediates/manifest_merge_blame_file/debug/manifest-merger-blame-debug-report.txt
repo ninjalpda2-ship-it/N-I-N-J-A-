@@ -23,96 +23,107 @@
 15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 15-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:8:5-76
 15-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:8:22-74
-16
-17    <permission
-17-->[androidx.core:core:1.12.0] /home/codespace/.gradle/caches/transforms-4/4d241d9967934eb7396e7225bac381c8/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
-18        android:name="com.ninja.assistant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-18-->[androidx.core:core:1.12.0] /home/codespace/.gradle/caches/transforms-4/4d241d9967934eb7396e7225bac381c8/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
-19        android:protectionLevel="signature" />
-19-->[androidx.core:core:1.12.0] /home/codespace/.gradle/caches/transforms-4/4d241d9967934eb7396e7225bac381c8/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
-20
-21    <uses-permission android:name="com.ninja.assistant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-21-->[androidx.core:core:1.12.0] /home/codespace/.gradle/caches/transforms-4/4d241d9967934eb7396e7225bac381c8/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
-21-->[androidx.core:core:1.12.0] /home/codespace/.gradle/caches/transforms-4/4d241d9967934eb7396e7225bac381c8/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
-22
-23    <application
-23-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:9:5-33:19
-24        android:allowBackup="true"
-24-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:10:9-35
-25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-25-->[androidx.core:core:1.12.0] /home/codespace/.gradle/caches/transforms-4/4d241d9967934eb7396e7225bac381c8/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
-26        android:debuggable="true"
-27        android:extractNativeLibs="false"
-28        android:label="NINJA"
-28-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:13:9-30
-29        android:networkSecurityConfig="@xml/network_security_config"
-29-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:12:9-69
-30        android:theme="@style/AppTheme"
-30-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:14:9-40
-31        android:usesCleartextTraffic="true" >
-31-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:11:9-44
-32        <activity
-32-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:15:9-21:20
-33            android:name="com.ninja.assistant.MainActivity"
-33-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:15:19-47
-34            android:exported="true" >
-34-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:16:13-36
-35            <intent-filter>
-35-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:17:13-20:29
-36                <action android:name="android.intent.action.MAIN" />
-36-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:18:17-68
-36-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:18:25-66
-37
-38                <category android:name="android.intent.category.LAUNCHER" />
-38-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:19:17-76
-38-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:19:27-74
-39            </intent-filter>
-40        </activity>
-41
-42        <service
-42-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:22:9-32:19
-43            android:name="com.ninja.assistant.NinjaAccessibilityService"
-43-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:23:13-54
-44            android:exported="true"
-44-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:25:13-36
-45            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
-45-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:24:13-79
-46            <intent-filter>
-46-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:26:13-28:29
-47                <action android:name="android.accessibilityservice.AccessibilityService" />
-47-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:27:17-91
-47-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:27:25-89
-48            </intent-filter>
-49
-50            <meta-data
-50-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:29:13-31:71
-51                android:name="android.accessibilityservice"
-51-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:30:17-60
-52                android:resource="@xml/accessibility_service_config" />
-52-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:31:17-69
-53        </service>
+16    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+16-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:9:5-87
+16-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:9:22-85
+17
+18    <permission
+18-->[androidx.core:core:1.12.0] /home/codespace/.gradle/caches/transforms-4/4d241d9967934eb7396e7225bac381c8/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+19        android:name="com.ninja.assistant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+19-->[androidx.core:core:1.12.0] /home/codespace/.gradle/caches/transforms-4/4d241d9967934eb7396e7225bac381c8/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+20        android:protectionLevel="signature" />
+20-->[androidx.core:core:1.12.0] /home/codespace/.gradle/caches/transforms-4/4d241d9967934eb7396e7225bac381c8/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+21
+22    <uses-permission android:name="com.ninja.assistant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+22-->[androidx.core:core:1.12.0] /home/codespace/.gradle/caches/transforms-4/4d241d9967934eb7396e7225bac381c8/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+22-->[androidx.core:core:1.12.0] /home/codespace/.gradle/caches/transforms-4/4d241d9967934eb7396e7225bac381c8/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+23
+24    <application
+24-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:10:5-38:19
+25        android:allowBackup="true"
+25-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:11:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.12.0] /home/codespace/.gradle/caches/transforms-4/4d241d9967934eb7396e7225bac381c8/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+27        android:debuggable="true"
+28        android:extractNativeLibs="false"
+29        android:label="NINJA"
+29-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:12:9-30
+30        android:networkSecurityConfig="@xml/network_security_config"
+30-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:15:9-69
+31        android:theme="@style/AppTheme"
+31-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:13:9-40
+32        android:usesCleartextTraffic="true" >
+32-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:14:9-44
+33        <activity
+33-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:16:9-22:20
+34            android:name="com.ninja.assistant.MainActivity"
+34-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:16:19-47
+35            android:exported="true" >
+35-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:17:13-36
+36            <intent-filter>
+36-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:18:13-21:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:19:17-68
+37-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:19:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:20:17-76
+39-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:20:27-74
+40            </intent-filter>
+41        </activity>
+42
+43        <service
+43-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:23:9-26:39
+44            android:name="com.ninja.assistant.NinjaOverlayService"
+44-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:24:13-48
+45            android:exported="false"
+45-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:26:13-37
+46            android:foregroundServiceType="microphone" />
+46-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:25:13-55
+47        <service
+47-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:27:9-37:19
+48            android:name="com.ninja.assistant.NinjaAccessibilityService"
+48-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:28:13-54
+49            android:exported="true"
+49-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:30:13-36
+50            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+50-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:29:13-79
+51            <intent-filter>
+51-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:31:13-33:29
+52                <action android:name="android.accessibilityservice.AccessibilityService" />
+52-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:32:17-91
+52-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:32:25-89
+53            </intent-filter>
 54
-55        <provider
-55-->[androidx.emoji2:emoji2:1.2.0] /home/codespace/.gradle/caches/transforms-4/e704537e5e3a20f25997c08ad08d469e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-56            android:name="androidx.startup.InitializationProvider"
-56-->[androidx.emoji2:emoji2:1.2.0] /home/codespace/.gradle/caches/transforms-4/e704537e5e3a20f25997c08ad08d469e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-57            android:authorities="com.ninja.assistant.androidx-startup"
-57-->[androidx.emoji2:emoji2:1.2.0] /home/codespace/.gradle/caches/transforms-4/e704537e5e3a20f25997c08ad08d469e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
-58            android:exported="false" >
-58-->[androidx.emoji2:emoji2:1.2.0] /home/codespace/.gradle/caches/transforms-4/e704537e5e3a20f25997c08ad08d469e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
-59            <meta-data
-59-->[androidx.emoji2:emoji2:1.2.0] /home/codespace/.gradle/caches/transforms-4/e704537e5e3a20f25997c08ad08d469e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-60                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-60-->[androidx.emoji2:emoji2:1.2.0] /home/codespace/.gradle/caches/transforms-4/e704537e5e3a20f25997c08ad08d469e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
-61                android:value="androidx.startup" />
-61-->[androidx.emoji2:emoji2:1.2.0] /home/codespace/.gradle/caches/transforms-4/e704537e5e3a20f25997c08ad08d469e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
-62            <meta-data
-62-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/codespace/.gradle/caches/transforms-4/28866f0e93566588e550145fc3bfc66d/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-63                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-63-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/codespace/.gradle/caches/transforms-4/28866f0e93566588e550145fc3bfc66d/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-64                android:value="androidx.startup" />
-64-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/codespace/.gradle/caches/transforms-4/28866f0e93566588e550145fc3bfc66d/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-65        </provider>
-66    </application>
-67
-68</manifest>
+55            <meta-data
+55-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:34:13-36:71
+56                android:name="android.accessibilityservice"
+56-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:35:17-60
+57                android:resource="@xml/accessibility_service_config" />
+57-->/workspaces/N-I-N-J-A-/app/src/main/AndroidManifest.xml:36:17-69
+58        </service>
+59
+60        <provider
+60-->[androidx.emoji2:emoji2:1.2.0] /home/codespace/.gradle/caches/transforms-4/e704537e5e3a20f25997c08ad08d469e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+61            android:name="androidx.startup.InitializationProvider"
+61-->[androidx.emoji2:emoji2:1.2.0] /home/codespace/.gradle/caches/transforms-4/e704537e5e3a20f25997c08ad08d469e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+62            android:authorities="com.ninja.assistant.androidx-startup"
+62-->[androidx.emoji2:emoji2:1.2.0] /home/codespace/.gradle/caches/transforms-4/e704537e5e3a20f25997c08ad08d469e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+63            android:exported="false" >
+63-->[androidx.emoji2:emoji2:1.2.0] /home/codespace/.gradle/caches/transforms-4/e704537e5e3a20f25997c08ad08d469e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+64            <meta-data
+64-->[androidx.emoji2:emoji2:1.2.0] /home/codespace/.gradle/caches/transforms-4/e704537e5e3a20f25997c08ad08d469e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+65                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+65-->[androidx.emoji2:emoji2:1.2.0] /home/codespace/.gradle/caches/transforms-4/e704537e5e3a20f25997c08ad08d469e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+66                android:value="androidx.startup" />
+66-->[androidx.emoji2:emoji2:1.2.0] /home/codespace/.gradle/caches/transforms-4/e704537e5e3a20f25997c08ad08d469e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+67            <meta-data
+67-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/codespace/.gradle/caches/transforms-4/28866f0e93566588e550145fc3bfc66d/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+68                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+68-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/codespace/.gradle/caches/transforms-4/28866f0e93566588e550145fc3bfc66d/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+69                android:value="androidx.startup" />
+69-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/codespace/.gradle/caches/transforms-4/28866f0e93566588e550145fc3bfc66d/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+70        </provider>
+71    </application>
+72
+73</manifest>

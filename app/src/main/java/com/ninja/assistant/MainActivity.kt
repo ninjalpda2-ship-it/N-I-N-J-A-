@@ -429,3 +429,14 @@ class MainActivity : Activity() {
         return scroll
     }
 }
+
+fun activarOverlay() {
+    if (!android.provider.Settings.canDrawOverlays(this)) {
+        val intent = android.content.Intent(
+            android.provider.Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+            android.net.Uri.parse("package:$packageName"))
+        startActivity(intent)
+    } else {
+        startService(android.content.Intent(this, NinjaOverlayService::class.java))
+    }
+}

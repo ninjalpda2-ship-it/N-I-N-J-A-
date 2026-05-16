@@ -13,6 +13,7 @@
     <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
 
     <permission
         android:name="com.ninja.assistant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -39,6 +40,10 @@
             </intent-filter>
         </activity>
 
+        <service
+            android:name="com.ninja.assistant.NinjaOverlayService"
+            android:exported="false"
+            android:foregroundServiceType="microphone" />
         <service
             android:name="com.ninja.assistant.NinjaAccessibilityService"
             android:exported="true"
